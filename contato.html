@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iury Hayran</title>
+    <style>
+        /*Estilo da página*/
+        body{
+            background-color: #c2c2c2;
+            max-width: 1200px;
+            margin: 0 auto; /*Centralizando o contéudo na tela*/ 
+        }
+        /*Cabeçalho da página*/
+        header{
+            width: 100%;
+            background-color: rgb(134, 134, 133);
+            padding: 4px;
+            position: static;
+            bottom: 0;
+            left: 0;
+        }        
+        /*Estilo do menu da página*/
+        .menu{            
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Courier New';
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        a, a:link{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #0c0c0c;
+        }
+        li{
+            float: left;
+        }
+        a:hover, header{
+            color: #ce1010;
+        }
+        /*Estilizando o conteúdo da página*/
+        * {
+            box-sizing: border-box;
+            font-family: 'Courier New';
+            text-decoration: none;
+            text-align: center
+        }
+        /*Estilo do título e da frase*/
+        .contato{
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+        }
+        /*Formatação do formulário*/
+        form input, textarea{
+            padding: 15px 20px;
+            border: 1px solid;
+            width: 80%; /*Largura do formulário*/
+            text-align: justify;            
+            margin: 0 0 10px;
+            border-radius: 10px;
+        }
+        /*Formatação do botão*/
+        form button{
+            padding: 15px;
+            width: 15%;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer; /*Mudar o cursor ao passar sobre o botão*/
+        }
+        /*Estilo do Rodapé (footer)*/
+        .rodape{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(7, 7, 7);        
+            padding: 7px;
+            display: flex;
+        }
+        /*Media query, aparência para dispositivos moveis*/
+        @media screen and (max-width: 400px) {
+            body {
+                max-width: 100%; /* Remova a largura máxima para telas menores */
+             }            
+            header{
+                width: 100%;
+                padding: 10px;
+            }
+            nav{
+                width: 80%;
+                display: flex;
+                margin-right: 20px;
+            }
+            .menu {                
+                display: block;
+                text-align: center;
+            }
+            a{
+                display: block; /*Links ocupam a largura disponível*/
+                text-align: center;                                
+            }
+            form button{
+                width: 30%;
+            }        
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Superior da página, mesma utilizada nas outras páginas-->
+    <header>
+        <!--Seção de links da página-->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!--Seção com o formulário da página-->
+        <section>
+            <div class="contato">
+                <h1>Contato</h1>
+                <p>Abaixo se econtra um formulário se caso desejar mandar uma mensagem:</p>
+            </div>
+            <!--Utilização da tag forms para desenvolver o formulário, juntamente com
+            inputs-->            
+            <form action="">
+                <!--Utilizição de required para que os campos sejam 
+                preenchdos obrigatoriamente-->
+                <input type="text" name="nome" placeholder="Digite o seu nome: " required>
+                <br> <br>
+                <input type="email" name="email" placeholder="Digite o seu email: " required>
+                <br><br>
+                <textarea name="mensagem" rows="10" cols="50" placeholder="Digite sua mensagem... " required>
+                </textarea>
+                <br>
+                <!--Botão de enviar da página-->
+                <button>Enviar</button>
+            </form>
+        </section>
+        <!--Footer-->
+        <footer class="rodape">Desenvolvido por: Iury Hayran</footer>  
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iury Hayran</title>
+
+    <style>
+        /*Estilo da página*/
+        body{
+            background-color: #c2c2c2;
+            max-width: 1200px;
+            margin: 0 auto; /*Centralizando o contéudo na tela*/ 
+        }
+        /*Cabeçalho da página*/
+        header{
+            width: 100%;
+            background-color: rgb(134, 134, 133);
+            padding: 4px;
+            position: static;
+            bottom: 0;
+            left: 0;
+        }        
+        /*Estilo do menu da página e dos links*/
+        .menu{            
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Courier New';
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        a, a:link{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #0c0c0c;
+        }
+        li{
+            float: left;
+        }
+        /*Ao passar o cursor do mouse por cima, mudará a cor de 
+        fundo e a cor das palavras*/
+        a:hover, header{
+            color: #ce1010;
+        }
+        /*Estilo da imagem da página*/
+        img{
+            border-radius: 25%;            
+            height: 9cm;
+            margin: 25px;        
+        }
+        .titulo{
+            text-align: center; 
+            clear: left;
+            font-family: 'Courier New';
+        }
+        .principal{
+            margin: 0 auto;
+            display: flex;            
+            width: 100%;
+            align-items: center;
+            font-family: 'Courier New';            
+            justify-content: center; /*Alinhamento centralizado*/
+        }
+        /*Estilo do Rodapé (footer)*/
+        .rodape{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(7, 7, 7);        
+            padding: 7px;
+            display: flex;
+        }
+        /*Media query, aparência para dispositivos moveis*/
+        @media screen and (max-width: 400px) {
+            header{
+                width: 100%;
+                padding: 10px;
+            }
+            .principal {
+                flex-direction: column;
+                align-items: center;                
+                text-align: center;                                               
+            } 
+            img {
+                max-height: auto; /*A imagem ocupa toda a largura disponível*/
+                width: 90%; /*Imagem ocuprá 90% da tela*/
+            } 
+            .titulo {
+                text-align: center;
+            }
+            nav{
+                width: 80%;
+                display: flex;
+                margin-right: 20px;
+            }
+            .menu {                
+                display: block;
+                text-align: center;
+            }
+            a{
+                display: block; /*Links ocupam a largura disponível*/
+                text-align: center;                                
+            }          
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Superior da página-->
+    <header>
+        <!--Seção de links da página-->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Parte principal da página, texto e imagem-->
+    <div class="principal">
+        <img src="imagem.eu.jpeg">
+        <!--Texto da página-->
+        <section>
+            <h1 class="titulo">Sobre Mim</h1>
+            <p>Nascido no dia 30/10/2002 no interior de Minas Gerais, sempre tive bastante
+                interesse em aprender coisas, principalmente na área da tecnologia. Atualmente,
+                estou cursando Análise e Desenvolvimento de Sistemas, uma área na qual sempre tive bastante
+                intercesse e curiosidade de aprender.
+            <br>
+            <br>
+            Faço alguns cursos em outros momentos do meu dia, sempre buscando 
+            aprender mais de novas árease também para deixar a rotina um pouco 
+            mais movimentada. 
+            <br>Fora desses momentos, gosto de acompanhar lives, assistir vídeos 
+            no YouTube, assistir series e animes e jogar alguns jogos com os meus amigos.
+            <br>
+            <br>
+            Com o obejtivo de desenvolver meus conhecimentos e resolver um trabalho
+            proposto na disciplina "Fundamentos da Programação Web", desenvolvi esse site 
+            para demonstrar tudo que absorvi durante as aulas.
+            <br><br>
+
+        </p>
+        </section>
+        <!--Footer-->
+        <footer class="rodape">Desenvolvido por: Iury Hayran</footer>        
+    </div>
+</body>
+</html>

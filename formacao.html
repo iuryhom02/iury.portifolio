@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iury Hayran</title>
+    <style>
+        /*Formatação do corpo da página*/
+        body{
+            background-color: #c2c2c2;
+            max-width: 1200px;
+            margin: 0 auto; /*Centralizando o contéudo na tela*/ 
+        }
+        /*Cabeçalho da página*/
+        header{
+            width: 100%;
+            background-color: rgb(134, 134, 133);
+            padding: 4px;
+            position: static;
+            bottom: 0;
+            left: 0;
+        }        
+        /*Estilo do menu da página (igual as outras páginas)*/
+        .menu{            
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Courier New';
+        }
+        ul{
+            list-style-type: none;
+        }
+        a, a:link{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #0c0c0c;
+        }
+        li{
+            float: left;
+        }
+        a:hover, header{
+            color: #ce1010;
+        }
+
+        /*Formatação de estilo das formações academicas e conhecimentos*/
+        .form_titulo{
+            font-family: 'Courier New';
+            font-size: 20px;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;                        
+        }
+        /*Estilo das minhas formações*/
+        .formacoes{
+            text-align: center;
+            width: 90%; /*95% de tamanho o texto*/
+            height: 75px;
+            border: solid 1px;
+            border-radius: 40px 5px; /*Arredondamento das bordas*/            
+            padding: 10px;
+            margin: 0 auto 40px 1cm; /*Definição da margem*/
+        }
+        .curso{
+            margin: auto;
+        }
+        .escola{
+            height: 6px;
+        }
+        .periodo{
+            padding: 10px;
+            color: rgb(61, 61, 61);           
+        }
+        h3{
+            font-size: 20px; /*Tamanho da fonte*/       
+            text-align: center;
+            border: solid 1px;
+            background-color: #757575;
+            border-radius: 25px;
+            width: 80%;
+            padding: 10px;            
+            margin: auto 60px;           
+        }        
+        /*Estilo do Rodapé (footer)*/
+        .rodape{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(7, 7, 7);        
+            padding: 7px;
+            display: flex;
+        }
+        /* Regras de mídia para dispositivos menores */
+        @media screen and (max-width: 400px) {
+            .form_titulo{
+                padding: 5px;
+                margin: auto;
+
+            }
+            .formacoes{
+                margin: 0 auto 20px; /* Reduzir a margem inferior */
+            }
+            h3{
+                font-size: 15px; /* Reduzir o tamanho da fonte para telas menores */
+                width: 100px; /* Reduzir a largura para telas menores */
+                margin: 15px 25px; /* Reduzir a margem para telas menores */
+                padding: 10px;
+            }            
+            header{
+                width: 100%;
+                padding: 10px;
+            }
+            nav{
+                width: 80%;
+                display: flex;
+                margin-right: 20px;
+            }
+            .menu {                
+                display: block;
+                text-align: center;
+            }
+            a{
+                display: block; /*Links ocupam a largura disponível*/
+                text-align: center;                                
+            } 
+        }
+    </style>
+
+</head>
+<body>
+    <!--Superior da página, mesma utilizada nas outras páginas-->
+    <header>
+        <!--Seção de links da página-->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Informações de minhas formações e habilidades profissionais-->
+    <section> 
+        <!--Título da página-->
+        <div class="form_titulo">
+            <h1>Formação Educacional</h1>
+        </div>        
+        <!--Lista contendo as informações de minhas formações-->
+        <ul>
+            <li>
+                <div class="formacoes">
+                        <p class="curso">Análise e Desenvolvimento de Sistemas</p>
+                        <p class="escola">Centro Universitário Internacional Uninter</p>
+                        <p class="periodo">Dez de 2022 - Jul de 2025</p>                       
+                </div>
+            </li>
+
+            <li>
+                <div class="formacoes">
+                    <p class="curso">Eletricista de Manutenção Eletroeletrônica</p>
+                    <p class="escola">Serviço Nacional de Aprendizagem Industrial</p>
+                    <p class="periodo">Ago de 2021 - Jun de 2022</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="formacoes">
+                    <p class="curso">Aprendizagem em Auxiliar de Logística</p>
+                    <p class="escola">Serviço Nacional de Aprendizagem Industrial</p>
+                    <p class="periodo">Ago de 2023 - Jun de 2024</p>
+                </div>
+            </li>            
+        </ul>           
+        <!--Informações de meus conhecimentos tecnicos-->        
+            <div class="form_titulo">
+                <h1>Conhecimentos</h1> 
+            </div>
+            <div>            
+                <ul>
+                    <li><h3>Python</h3></li>
+                    <li><h3>Java</h3></li>
+                    <li><h3>HTML</h3></li> 
+                    <li><h3>CSS</h3></li> 
+                    <li><h3>JavaScript</h3></li>              
+                </ul>
+            </div>
+    </section>
+    <!--Footer-->
+    <footer class="rodape">Desenvolvido por: Iury Hayran</footer>        
+</div>
+</body>
+</html>

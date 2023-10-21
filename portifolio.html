@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iury Hayran</title>
+    <style>
+         /*Estilo da página*/
+         body{
+            background-color: #c2c2c2;
+            max-width: 1200px;
+            margin: 0 auto; /*Centralizando o contéudo na tela*/ 
+        }
+        /*Cabeçalho da página*/
+        header{
+            width: 100%;
+            background-color: rgb(134, 134, 133);
+            padding: 4px;
+            position: static;
+            bottom: 0;
+            left: 0;
+        }        
+        /*Estilo do menu da página*/
+        .menu{            
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Courier New';
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        a, a:link{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #0c0c0c;
+        }
+        li{
+            float: left;
+        }
+        a:hover, header{
+            color: #ce1010;
+        }
+
+        h1{
+            font-family: 'Courier New';
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        p{
+            font-family: 'Courier New';
+            text-align: justify;            
+        }
+
+        /*Estilo dos meus projetos que serão exibidos na tela*/
+        .projeto{
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Courier New';
+            border: solid 1px;
+            margin: 10px;
+            border-radius: 2px;
+        }
+
+        /*Estilo do Rodapé (footer)*/
+        .rodape{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: rgb(7, 7, 7);        
+            padding: 7px;
+            display: flex;
+        }
+         /* Regras de mídia para dispositivos menores */
+        @media screen and (max-width: 400px){
+            header{
+                width: 100%;
+                padding: 10px;
+            }
+            p{
+                text-align: center;
+            }
+            img {
+                max-height: auto; /*A imagem ocupa toda a largura disponível*/
+                width: 90%; /*Imagem ocuprá 90% da tela*/
+            } 
+            .titulo {
+                text-align: center;
+            }
+            nav{
+                width: 80%;
+                display: flex;
+                margin-right: 20px;
+            }
+            .menu {                
+                display: block;
+                text-align: center;
+            }
+            a{
+                display: block; /*Links ocupam a largura disponível*/
+                text-align: center;                                
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+     <!--Superior da página, mesma utilizada nas outras páginas-->
+     <header>
+        <!--Seção de links da página-->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Seção para o conteúdo da página Portifólio-->
+    <section>
+        <h1>Projetos</h1>
+    <!--Lista com o meu portifólio-->
+    <div>
+        <p>Aqui está alguns projetos desenvolvidos por mim. Se estiver interessado(a) 
+            em conhecer o que faço com o que aprendo, fique avontade!
+        </p>
+        <ul>
+            <li>
+                <div class="projeto"><a href="https://iuryhom02.github.io/calculadorasimples/">Calculadora Simples</a></div>
+            </li>
+            <li><div class="projeto"><a href="https://iuryhom02.github.io/soulspagina/">Página Simples</a></div></li>
+        </ul>
+    </div>
+        
+    </section>
+     <!--Footer-->
+     <footer class="rodape">Desenvolvido por: Iury Hayran</footer>
+</body>
+</html>
